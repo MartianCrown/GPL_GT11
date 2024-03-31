@@ -4,11 +4,10 @@ from fantasy_op import solve_for_best_formation
 
 # Your database connection details
 db_params = {
-    "dbname": "gpl",
-    "user": "gpl_reader",
-    "host": "13.232.119.181",
-    "port":"5432",
-    "password": "pa55w0rd!@#"
+    "dbname": "dbname",
+    "user": "user",
+    "host": "host",
+    "password": "password"
 }
 
 # SQL query with a placeholder for `match_id`
@@ -54,10 +53,3 @@ teams = df['team'].unique().tolist()
 best_formation, max_points, grand_Points, selected_players = solve_for_best_formation(players, teams)
 print(f"Best Formation: {best_formation}, Max Points: {max_points}, Grand Points: {grand_Points}")
 print("Selected Players:", selected_players)
-
-
-
-
-# pd.set_option('display.max_rows', None) 
-# Do something with the DataFrame
-# print(df)

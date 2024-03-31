@@ -43,19 +43,3 @@ def solve_for_best_formation(players, teams):
                 grandPoints = best_score + 0.5 * selected_players[0]['points'] + 0.25 * selected_players[1]['points']
 
     return best_formation, best_score, grandPoints, best_team
-
-# def read_players_from_csv(file_path):
-#     # Reading the CSV into a DataFrame
-#     df = pd.read_csv(file_path)
-    
-#     # Convert DataFrame to list of dictionaries
-#     players = df.to_dict('records')
-#     teams = df['team'].unique().tolist()
-#     return players, teams
-
-# # Replace 'your_file_path_here.csv' with your actual file path
-# file_path = 'match_data.csv'
-# players,teams = read_players_from_csv(file_path)
-# best_formation, max_points, selected_players = solve_for_best_formation(players, teams)
-# print(f"Best Formation: {best_formation}, Max Points: {max_points}")
-# print("Selected Players:", selected_players)
